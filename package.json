@@ -1,0 +1,23 @@
+{
+  "name": "flux-demo",
+  "version": "0.0.1",
+  "main": "main.js",
+  "devDependencies": {
+    "es6-promise": "*",
+    "object-assign": "*",
+    "babelify": "*",
+    "browserify": "*",
+    "connect": "*",
+    "react": "*",
+    "serve-static": "*",
+    "superagent": "*",
+    "watchify": "*"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "watch": "npm outdated --depth 0; watchify browser.js -o build/bundle.js --debug --verbose"
+  },
+  "browserify": {
+    "transform": [ "babelify" ]
+  }
+}

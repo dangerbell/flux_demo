@@ -1,0 +1,6 @@
+.DS_Store
+build/
+src/javascript/config/config.js
+node_modules/
+src/**/*.map
+dist/
