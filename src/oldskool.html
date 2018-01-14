@@ -1,0 +1,32 @@
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+</head>
+<body>
+  <h1>Doohicky</h1>
+  <input id="checker" type="checkbox" />
+  <input id="clicked" type="input" value="0"/>
+  <div id="cycle" style="height: 100px; width: 100px; background-color: red"/>
+  <script>
+    $('#checker').change(function() {
+
+      $("#clicked").val(parseInt($("#clicked").val(), 10) + 1);
+      var bgColor = $("#cycle").css("background-color");
+      switch (bgColor) {
+        case "rgb(255, 0, 0)":
+          $("#cycle").css("background-color", "green");
+          break;
+        case "rgb(0, 128, 0)":
+          $("#cycle").css("background-color", "blue");
+          break;
+        case "rgb(0, 0, 255)":
+          $("#cycle").css("background-color", "red");
+          break;
+      }
+      
+
+    });
+
+  </script>
+</body>
+</html>
