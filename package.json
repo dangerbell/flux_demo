@@ -3,21 +3,21 @@
   "version": "0.0.1",
   "main": "main.js",
   "devDependencies": {
-    "es6-promise": "*",
-    "object-assign": "*",
-    "babelify": "*",
-    "browserify": "*",
-    "connect": "*",
-    "react": "*",
-    "serve-static": "*",
-    "superagent": "*",
-    "watchify": "*"
+    "es6-promise": "2.0.1",
+    "object-assign": "2.0.0",
+    "babelify": "5.0.3",
+    "browserify": "9.0.3",
+    "connect": "3.3.4",
+    "react": "0.12.2",
+    "serve-static": "1.9.1",
+    "superagent": "1.1.0",
+    "watchify": "2.4.0"
   },
   "scripts": {
     "start": "node server.js",
     "watch": "npm outdated --depth 0; watchify browser.js -o build/bundle.js --debug --verbose"
   },
   "browserify": {
-    "transform": [ "babelify" ]
+    "transform": ["babelify"]
   }
 }
